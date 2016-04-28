@@ -1,0 +1,319 @@
+/*共通性設定*//*版型四*/
+nav, #nd-nav, h3{
+	color: rgb(96,190,174);
+}
+
+.icon, .hero-unit {
+	margin-bottom: 10px;
+}
+
+.option {
+	background-color: rgb(239,248,247);
+	padding: 10px 0px;
+}
+
+.option h3 {
+	font-size: 2rem;
+}
+
+.option p {
+	font-size: 1rem;
+}
+
+.title {
+	font-size: 1.8rem;
+}
+
+time {
+	color: #AAA;
+}
+
+body {
+	max-width: 991px;
+	margin: 50px auto;
+}
+
+#wrapper {
+	display: flex;
+}
+
+#nav-info {
+	width: 20%;
+	padding-right: 100px;
+}
+
+#main {
+	width: 80%;
+}
+
+.icon {
+	width: 100px;
+}
+
+.title-box {
+	position: relative;
+	bottom: 285px;
+}
+
+#titleA {
+	text-align: right;
+	background-color: white;
+	position: relative;
+	float: right;
+	padding: 15px;
+	font-size: 2.2rem;
+}
+
+.clear {
+	clear: both;
+}
+
+#titleB {
+	text-align: right;
+	color: white;
+	background-color: black;
+	position: relative;
+	float: right;
+	padding: 15px;
+	font-size: 2.2rem;
+}
+
+aside {
+	color: rgb(87,87,87);
+}
+
+aside h5 {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+aside p {
+	font-size: 0.8rem;
+}
+
+#nd-nav {
+	display: flex;
+	width: 100%;
+}
+
+.hero-unit {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.option {
+	flex-grow: 1;
+	text-align: center;
+	border-right: rgb(217,239,236) 0.5px solid;
+	border-left: rgb(217,239,236) 0.5px solid;
+}
+
+.pic {
+	height: 445px;
+}
+
+#archives {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.arti-with-pic {
+	width: 25%;
+	padding: 0 10px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+li {
+	padding-bottom: 18px;
+	font-size: 2rem;
+}
+
+img {
+	width: 100%;
+}
+
+/*版型三*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+	body {
+		max-width: 768px;
+		margin: 30px auto;
+	}
+
+	aside, .option p {
+		display: none;
+	}
+
+	#wrapper, #main {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	#nav-info {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+
+	#nd-nav {
+		position: relative;
+		top: 5px;
+	}
+
+	nav {
+		position: relative;
+		left: 33%;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 10px;
+		font-size: 1.7rem;
+	}
+
+	.pic {
+		height: 445px;
+	}
+
+	.option {
+		padding: 5px 0px;
+	}
+
+	#archives {
+		padding-top: 10px;
+	}
+}
+
+/*版型二*/
+@media screen and (min-width: 480px) and (max-width: 768px){
+	body {
+		max-width: 480px;
+		margin: 20px auto;
+	}
+
+	aside, .option {
+		display: none;
+	}
+
+	#wrapper, #main, #archives {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#archives {
+		margin-top: 60px;
+	}
+
+	#nav-info {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+
+	.arti-with-pic {
+		width: 50%;
+		padding: 20px 5px;
+	}
+
+	.pic {
+		height: 248px;
+		width: 100%;
+	}
+
+	#titleA, #titleB {
+		top: 211px;
+		font-size: 1rem;
+		text-align: left;
+		padding: 10px;
+		width: 100%;
+	}
+
+	.icon {
+		width: 60px;
+	}
+
+	nav {
+		position: relative;
+		left: 3%;
+	}
+
+	li {
+		display: inline;
+		padding: 10px;
+		font-size: 1.6rem;
+	}
+}
+
+
+@media screen and (max-width: 480px){
+	body {
+		max-width: 350px;
+		margin: 10px auto auto auto;
+	}
+
+	aside, .option {
+		display: none;
+	}
+
+	#wrapper, #main, #archives, #nav-info {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#nav-info {
+		padding: 0;
+	}
+
+	#titleA, #titleB {
+		top: 211px;
+		font-size: 1rem;
+		text-align: left;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.arti-with-pic {
+		width: 100%;
+		padding: 0 0 20px 0;
+	}
+
+	.hero-unit {
+		height: 248px;
+	}
+
+	.icon {
+		width: 60px;
+		order: 2;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	nav {
+		margin: 0 auto;
+	}
+
+	li {
+		padding: 5px;
+		font-size: 1.4rem;
+		display: inline;
+		order: 1;
+	}
+}
+
+
+
+
+
